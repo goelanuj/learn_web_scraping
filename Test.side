@@ -1,0 +1,119 @@
+{
+  "id": "eb25d934-336e-4875-85f4-b5230e66bcbe",
+  "version": "2.0",
+  "name": "Test",
+  "url": "https://careers.peopleclick.com",
+  "tests": [{
+    "id": "cbb2bd15-37a5-41c4-963f-1942464f905d",
+    "name": "test",
+    "commands": [{
+      "id": "aa8c0d5f-c0df-4803-bd1e-6876770c9bf7",
+      "comment": "",
+      "command": "open",
+      "target": "/careerscp/client_homedepot/int1068645304/search.do",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f3940084-4527-47b8-b22a-ef3f669b8407",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1680x932",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d901cee6-c355-4546-b8a9-d8232ec55b8b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.banner:nth-child(2)",
+      "targets": [
+        ["css=.banner:nth-child(2)", "css:finder"],
+        ["xpath=(//img[@alt='The Home Depot Banner'])[2]", "xpath:img"],
+        ["xpath=//header[@id='pf-navbar-header']/div/div/img[2]", "xpath:idRelative"],
+        ["xpath=//div/img[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dcfea897-5db6-429b-92e6-10a8d72b9a4b",
+      "comment": "",
+      "command": "removeSelection",
+      "target": "id=com.peopleclick.cp.formdata.FLD_JOB_FUNCTION",
+      "targets": [
+        ["id=com.peopleclick.cp.formdata.FLD_JOB_FUNCTION", "id"],
+        ["name=com.peopleclick.cp.formdata.FLD_JOB_FUNCTION", "name"],
+        ["css=#com\\.peopleclick\\.cp\\.formdata\\.FLD_JOB_FUNCTION", "css:finder"],
+        ["xpath=//select[@id='com.peopleclick.cp.formdata.FLD_JOB_FUNCTION']", "xpath:attributes"],
+        ["xpath=//div[@id='pf-rwd-searchlist-main']/div[6]/div[2]/div/select", "xpath:idRelative"],
+        ["xpath=//div[2]/div/select", "xpath:position"]
+      ],
+      "value": "label=All (1,087)"
+    }, {
+      "id": "eb450bbd-1501-4be9-b824-1267be0fd78a",
+      "comment": "",
+      "command": "addSelection",
+      "target": "id=com.peopleclick.cp.formdata.FLD_JOB_FUNCTION",
+      "targets": [
+        ["id=com.peopleclick.cp.formdata.FLD_JOB_FUNCTION", "id"],
+        ["name=com.peopleclick.cp.formdata.FLD_JOB_FUNCTION", "name"],
+        ["css=#com\\.peopleclick\\.cp\\.formdata\\.FLD_JOB_FUNCTION", "css:finder"],
+        ["xpath=//select[@id='com.peopleclick.cp.formdata.FLD_JOB_FUNCTION']", "xpath:attributes"],
+        ["xpath=//div[@id='pf-rwd-searchlist-main']/div[6]/div[2]/div/select", "xpath:idRelative"],
+        ["xpath=//div[2]/div/select", "xpath:position"]
+      ],
+      "value": "label=Technology (143)"
+    }, {
+      "id": "6e30f97d-7d7d-43aa-ac4e-59df944d5cac",
+      "comment": "",
+      "command": "click",
+      "target": "id=sp-searchButton",
+      "targets": [
+        ["id=sp-searchButton", "id"],
+        ["name=input", "name"],
+        ["css=#sp-searchButton", "css:finder"],
+        ["xpath=//input[@id='sp-searchButton']", "xpath:attributes"],
+        ["xpath=//div[@id='pf-rwd-lastCriteria']/input[2]", "xpath:idRelative"],
+        ["xpath=//div[10]/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c5317318-8598-4189-b980-05c0cd46be57",
+      "comment": "",
+      "command": "click",
+      "target": "id=addbutton_354568_en-us",
+      "targets": [
+        ["id=addbutton_354568_en-us", "id"],
+        ["name=PARAMFILTER:functionName=addToCart|jobPost=354568_en-us|", "name"],
+        ["css=.pf-rwd-removeapplycont > #addbutton_354568_en-us", "css:finder"],
+        ["xpath=//button[@id='addbutton_354568_en-us']", "xpath:attributes"],
+        ["xpath=//div[@id='pf-rwd-searchlist-main']/div/div[4]/div/div[2]/div/button", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div[2]/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1cf389c8-def4-45e9-b9a6-30e9285c69d0",
+      "comment": "",
+      "command": "click",
+      "target": "id=jobCartLink",
+      "targets": [
+        ["id=jobCartLink", "id"],
+        ["linkText=Saved Jobs (1)", "linkText"],
+        ["css=#jobCartLink", "css:finder"],
+        ["xpath=//a[@id='jobCartLink']", "xpath:attributes"],
+        ["xpath=//div[@id='bs-example-navbar-collapse-1']/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'jobcart.do?functionName=getJobCartPage')]", "xpath:href"],
+        ["xpath=//div[2]/ul/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Saved Jobs (1)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "7659bbc3-9e0e-4ef9-9709-5cff6a057a9c",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["cbb2bd15-37a5-41c4-963f-1942464f905d"]
+  }],
+  "urls": ["https://careers.peopleclick.com/"],
+  "plugins": []
+}
